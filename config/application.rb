@@ -10,6 +10,8 @@ module OpbcVeracruz
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.i18n.default_locale = :"pt-BR"
+    I18n.enforce_available_locales = false
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -17,3 +19,4 @@ module OpbcVeracruz
     # the framework and any gems in your application.
   end
 end
+
